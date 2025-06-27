@@ -1,4 +1,9 @@
-import { Route, BrowserRouter as Router, Routes, useNavigate } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 
 import { Footer } from "./components";
 import { Contact, Home } from "./pages";
@@ -7,7 +12,7 @@ import gmailIcon from "../src/assets/images/gmail.png";
 
 const App = () => {
   return (
-    <main style={{ background: 'black' }}>
+    <main style={{ background: "black" }}>
       <Router>
         <AppContent />
       </Router>
@@ -27,7 +32,7 @@ const AppContent = () => {
             href="https://github.com/adityabhadauria"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
+            className="flex items-center gap-2 text-white transition-colors hover:text-white hover:bg-[linear-gradient(to_right,_#111111,_#1a1a1a)] px-2 py-1 rounded"
           >
             <img src={github} alt="GitHub" className="w-6 h-6" />
             <span className="hidden sm:inline">GitHub</span>
@@ -36,14 +41,14 @@ const AppContent = () => {
             href="https://www.linkedin.com/in/aditya-bhadauria-016a771b9/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
+            className="flex items-center gap-2 text-white transition-colors hover:text-white hover:bg-[linear-gradient(to_right,_#111111,_#1a1a1a)] px-2 py-1 rounded"
           >
             <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
             <span className="hidden sm:inline">LinkedIn</span>
           </a>
           <button
-            onClick={() => navigate('/contact')}
-            className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors bg-transparent border-none cursor-pointer"
+            onClick={() => navigate("/contact")}
+            className="flex items-center gap-2 text-white transition-colors hover:text-white hover:bg-[linear-gradient(to_right,_#111111,_#1a1a1a)] px-2 py-1 rounded bg-transparent border-none cursor-pointer"
           >
             <img src={gmailIcon} alt="Gmail" className="w-6 h-6" />
             <span className="hidden sm:inline">Gmail</span>
