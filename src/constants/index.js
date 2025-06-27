@@ -159,8 +159,8 @@ export const projects = [
         theme: 'btn-back-green',
         name: 'Backgammon Galaxy v2',
         description: 'A leading backgammon game in Europe with 40,000+ daily active users. Features include customizable avatars, interactive boards, rating-based matchmaking, leaderboards, real-time waiting room, AI integration with XG Gammon engine, and social features.',
-        link: 'https://play.backgammongalaxy.com',
-        technologies: ['React', 'Node.js', 'Elixir', 'WebSockets', 'Kubernetes', 'Docker', 'gRPC', 'XMPP']
+        link: 'https://www.backgammongalaxy.com/',
+        technologies: ['React', 'Node.js', 'Elixir', 'WebSockets', 'Kubernetes', 'Docker', 'tRPC', 'XMPP']
     },
     {
         iconUrl: null,
