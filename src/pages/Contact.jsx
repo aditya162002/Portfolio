@@ -81,18 +81,18 @@ const Contact = () => {
 
   return (
     <section
-      className="relative flex lg:flex-row flex-col max-container"
+      className="relative flex flex-col max-container"
       style={{ background: "black", minHeight: "100vh" }}
     >
       {alert.show && <Alert {...alert} />}
 
-      <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text text-white">Get in Touch</h1>
+      <div className="flex-1 min-w-full flex flex-col px-4 sm:px-0">
+        <h1 className="head-text text-white text-center sm:text-left">Get in Touch</h1>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="w-full flex flex-col gap-7 mt-14"
+          className="w-full flex flex-col gap-6 sm:gap-7 mt-8 sm:mt-14 max-w-md sm:max-w-none mx-auto sm:mx-0"
         >
           <label className="text-white font-semibold">
             Name
@@ -141,7 +141,7 @@ const Contact = () => {
             disabled={loading}
             onFocus={handleFocus}
             onBlur={handleBlur}
-            className="text-white px-5 py-2 rounded-lg transition disabled:opacity-50"
+            className="text-white px-5 py-3 rounded-lg transition disabled:opacity-50 font-medium"
             style={{
               background: "linear-gradient(to right, #111111, #1a1a1a)",
             }}

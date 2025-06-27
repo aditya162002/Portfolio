@@ -21,8 +21,8 @@ const AppContent = () => {
   return (
     <>
       {/* Social Links Header */}
-      <header className="fixed top-0 right-0 z-50 p-6">
-        <nav className="flex text-lg gap-7 font-medium">
+      <header className="fixed top-0 right-0 z-50 p-4 sm:p-6">
+        <nav className="flex text-lg gap-4 sm:gap-7 font-medium">
           <a
             href="https://github.com/adityabhadauria"
             target="_blank"
@@ -30,7 +30,7 @@ const AppContent = () => {
             className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
           >
             <img src={github} alt="GitHub" className="w-6 h-6" />
-            GitHub
+            <span className="hidden sm:inline">GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/aditya-bhadauria-016a771b9/"
@@ -39,14 +39,14 @@ const AppContent = () => {
             className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
           >
             <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
-            LinkedIn
+            <span className="hidden sm:inline">LinkedIn</span>
           </a>
           <button
             onClick={() => navigate('/contact')}
             className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors bg-transparent border-none cursor-pointer"
           >
             <img src={gmailIcon} alt="Gmail" className="w-6 h-6" />
-            Gmail
+            <span className="hidden sm:inline">Gmail</span>
           </button>
         </nav>
       </header>
